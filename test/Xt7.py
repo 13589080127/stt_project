@@ -26,3 +26,7 @@ print end7 + end8 + end9 + end10 + end11 + end12   #打印
 
 print end1 + end2 + end3 + end4 + end5 + end6 + end7 + end8 + end9 + end10 + end11 + end12  
 #可以如此打印，但是超出80字符，不符合python风格
+
+"\"\""
+\r
+\n
