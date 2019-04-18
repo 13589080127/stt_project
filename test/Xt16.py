@@ -22,10 +22,12 @@ print "If you do want that, hit RETURN."    #print“”
 raw_input("?")   #获取控制台，光标放在终端上
 
 print "Opening the file..."     #print“”
-target = open(filename, 'w')    ####'w' 的作用？？书侯敏有解释，w必带吗？     #打开XXX文件，并将值赋予target这个变量
+target = open(filename, 'w+')    ####'w' 的作用？？书侯敏有解释，w必带吗？     #打开XXX文件，并将值赋予target这个变量
+#有+和无+
+
 
 print "Truncating the file. Goodbye!"     #print“”
-target.truncate()     #truncate清除target这个文件
+#target.truncate()     #truncate清除target这个文件
 
 print "Now I'm going to ask you for three lines."     #print“”
 
@@ -38,11 +40,12 @@ print "I'm going to write these to the file."   #print“”
 #target.write(line1)  #写target文件的第一行？
 #target.write("\n")   #为什么\n不在line1后面
 #target.write(line2)
-#target.write("\n")
+#target.write("\n")   #转移符只在字符串中有效，不带引号的\n会被视作变量
 #target.write(line3)
 #target.write("\n")
 #练习：试着用一个 target.write() 将 line1, line2, line3 打 印出来，你可以使用字符串、格式化字符、以及转义字符
-target.write(line1+"\n"+line2+"\n"+line3+"\n")  
+#target.write(line1+"\n"+line2+"\n"+line3+"\n")  
+target.read()
 
 print "And finally, we close it."
 target.close()   #target是target = open(filename, 'w') 赋值得到的，那filename是否需要关闭
