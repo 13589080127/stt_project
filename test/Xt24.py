@@ -2,15 +2,15 @@
 #更多练习
 
 print "Lte's practice everything."
-print 'You\'d need to know \'bout escapes with \\ that do \n newlines and \t tabs.'
+print 'You\'d need to know \'bout escapes with \\ that do \n newlines and \t tabs.'   #转译符
 
 poem = """
-\tThe lovely world
+\tThe lovely world     #水平制表符，缩进4格
 with logic so firmly planted
-cannot discern \n the needs of love
+cannot discern \n the needs of love     #换行
 nor comprehend passion from intuition
 and requires an explanation
-\n\t\twhere there is none.
+\n\t\twhere there is none.    #换行、缩进四格、四格
 """
 
 print "----------"
@@ -29,7 +29,7 @@ def secret_formula(started):
 	
 	
 start_point = 10000
-beans, jars, crates = secret_formula(start_point)
+beans, jars, crates = secret_formula(start_point)  #这一行的作用是什么？变量？解包？
 
 print "With a starting point of: %d" % start_point
 print "We'd have %d beans, %d jars, and %d crates." % (beans, jars, crates)
