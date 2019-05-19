@@ -7,7 +7,6 @@
 #one, first, second, third  = argv    
 #报错如下：ValueError: need more than 1 value to unpack
 #解决方案如下：python Xt13.py script, first, second
-#解决原因：
 
 
 #print "The script is a called:", one
@@ -16,6 +15,7 @@
 #print "Your third variable is:", third
 
 
+#自主练习
 #father, mother, baby1, baby2, baby3 = argv     #执行时输入的变量为4个，执行成功；5个时，执行失败，查看网上执行结果一致
 
 #print "FJY is:", father

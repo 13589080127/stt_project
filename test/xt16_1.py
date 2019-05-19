@@ -59,16 +59,15 @@ script, filename = argv   #将argv这个方法进行解包，解包得到script,
 #haha = open(filename, 'a+')
 #haha.write("ddd")    #w+写入文件后，会把原文件内容，覆盖掉    a+文档末尾追加
 
-www = open(filename, 'r')
+www = open(filename,"r")
 d = www.read()
 
-new = open(filename, 'w')
-
+newFile = open(filename,"w")
 print "all content:", d
 q = d + "ac"
 print "new content:", q
-new.write(q)
-www.close()
+newFile.write(q)
+newFile.close()
 
 
 #print "And finally, we close it."

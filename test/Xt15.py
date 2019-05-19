@@ -9,10 +9,10 @@ script, filename = argv   #将argv这个方法进行解包，解包得到script,
 
 txt = open(filename)   #打开通过解包得到的文件，赋值给txt
 print "Here's your file %r:" % filename   #打印“”， % filename 进行替换%r
-print txt.read()     #读这个文件的内容，并打印出来
+print txt.read()     #读这个文件的内容，并打印出来      readline()，读取文件中的一行
 
 #read方法只有一个参数，如输入多个参数read（3,3），返回：TypeError: read() takes at most 1 argument (2 given)
-#read（3）即读取被读取文件的前3个字符；read（），读取被读取文件的全部内容
+#read（3）即读取被读取文件的第3个字符之前的；read（），读取被读取文件的全部内容
   
   
   
