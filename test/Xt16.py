@@ -64,8 +64,10 @@ print "I'm going to write these to the file."   #print“”
 #target.write(line3)
 #target.write("\n")
 #练习：试着用一个 target.write() 将 line1, line2, line3 打 印出来，你可以使用字符串、格式化字符、以及转义字符
-#target.write(line1+"\n"+line2+"\n"+line3+"\n")  
+#target.write(line1+"\n"+line2+"\n"+line3+"\n")     #转移符只在字符串中有效，不带引号的\n会被视作变量
 target.write()
 
 print "And finally, we close it."
 target.close()   #target是target = open(filename, 'w') 赋值得到的，那filename是否需要关闭
+
+
